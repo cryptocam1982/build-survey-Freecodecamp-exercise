@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Survey Form Cam</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Cam's practicing survey form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <main>
+            <form id="survey-form">
+                <label id="name-label" for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Full name" required />
+                <br />
+                <label id="email-label" for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="example@mail.com" required />
+                <br />
+                <label id="number-label" for="age">Age (optional)</label>
+                <input id="number" name="age" type="number" min="14" max="75" placeholder="Age" />
+                <br /><br /><br />
+                <label for="current-role">Which option best describes your current role?</label>
+                <select id="dropdown" name="current-role">
+                    <option value="student">Student</option>
+                    <option value="working">Working</option>
+                    <option value="full-time-job">Full time job</option>
+                    <option value="changing-late-careers">Changing late careers</option>
+                </select>
+                <br /><br /><br />
+                <fieldset>
+                    <legend>Was this a nice experience?</legend>
+                    <label for="definitely">Definitely</label>
+                    <input type="radio" id="definitely" name="experience" value="definitely" required />
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="perhaps" name="experience" value="perhaps" />
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="experience" value="no" />
+                </fieldset>
+                <br /><br />
+                <fieldset>
+                    <legend>Why do you want to switch to programming after your 40's? Check all that apply.</legend>
+                    <label for="money">Money</label>
+                    <input type="checkbox" id="money" name="money" value="money" />
+                    <label for="family">More Time for Family</label>
+                    <input type="checkbox" id="family" value="family" />
+                    <label for="working-hours">Choose my own working hours</label>
+                    <input type="checkbox" id="working-hours" value="working-hours" />
+                </fieldset>
+                <br /><br />
+                <label for="coding">Tell us how you discovered coding:</label>
+                <br><br>
+                <textarea id="coding" name="coding" rows="10" cols="25"></textarea>
+                <br />
+                <input id="submit" type="submit" value="Send Request" />
+            </form>
+        </main>
+    </body>
+</html>
